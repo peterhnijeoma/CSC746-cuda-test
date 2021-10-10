@@ -29,7 +29,7 @@ int main(void)
   std::chrono::time_point<std::chrono::high_resolution_clock> end_time = std::chrono::high_resolution_clock::now();
   std::chrono::duration<double> elapsed = end_time - start_time;
 
-  std::cout << "elapsed time is: " << elapsed << "\n";
+  std::cout << "elapsed time is: " << elapsed.count() << "\n";
 
   // Check for errors (all values should be 3.0f)
   float maxError = 0.0f;
